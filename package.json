@@ -1,0 +1,38 @@
+{
+  "name": "serverless-crm",
+  "version": "1.0.0",
+  "description": "A serverless CRM that can be hosted on cloudflare pages. The CRM is able to track people, notes, and custom fields. Custom fields can be used to filter and group data in a variety of ways. The CRM is able to integrate into google calender using google OAuth.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "CRM",
+    "serverless",
+    "cloudflare",
+    "google calendar",
+    "OAuth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-polyfill": "^6.26.0",
+    "cloudflare": "^2.7.0",
+    "googleapis": "^39.2.0",
+    "jest": "^26.6.3",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0"
+  }
+}
